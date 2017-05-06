@@ -1,0 +1,8 @@
+<h1>写真一覧</h1>
+
+<% @pictures.each do |picture| %>
+  <p>タイトル:<%= picture.title %></p>
+  <p>本文:<%= picture.content %></p>
+<% end %>
+
+<%= link_to "写真を投稿する", new_picture_path %>
