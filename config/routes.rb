@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  resources :pictures, only: [:index, :new, :create]
+  resources :pictures, only: [:index, :new, :create, :edit, :update, :destroy]
 
 
   # The priority is based upon order of creation: first created -> highest priority.
