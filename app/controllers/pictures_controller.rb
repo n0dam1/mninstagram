@@ -37,7 +37,7 @@ class PicturesController < ApplicationController
 
   private
     def pictures_params
-      params.require(:picture).permit(:title, :content)
+      params.require(:picture).permit(:title, :content, :photo)
     end
 
     # idをキーとして値を取得するメソッド
